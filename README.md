@@ -19,7 +19,7 @@ Wearable computing is one of the most popular areas in data science as companies
 * Standing 
 * Laying
 
-[Project Website](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
+Reference: [Project Website](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
 ***
 
@@ -27,16 +27,60 @@ Wearable computing is one of the most popular areas in data science as companies
 * README.md: This file
 * CookBook.md: Variables and data description
 * run_analysis.R: Analysis script
-* gcdw4_ds.zip: Copy of the archive file to be cleaned up by the run_analysis.R script. An original copy can be found at [Assignment data link](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+* gcdw4_ds.zip: Copy of the archive file to be cleaned up by the run_analysis.R script. An original copy of the archive can be found at [Assignment data link](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 ***
 
 #####run_analysis.R
+
+######Installation
+```
+source("run_analysis.R")
+```
+
+######Dependencies
+```
+library(readr)
+library(plyr)
+```
+
+
 ######Usage
 ```
 # Cleans the dataset from the measurement archive and returns a dataset
 my.tidy.dataset<-run_analysis()
 ```
+
+######Functions
+#######run_analysis()
+########Parameters
+None
+########Steps
+1. Unzip the __gcdw4_ds.zip__ archive into the current directory
+2. Get the training and testing data sets recorded from the smartphone's sensors using the function ```fwf2df_list()```
+3. Get the list of features 
+4. Get the training and testing features vectors using the function ```fwf2df_list()```
+5. Get the names of the activities with their corresponding codes
+6. Get the list of activities performed and the related subjects identifiers
+7. Merge everything in a common dataframe
+8. Standardize the names of the common dataframe
+9. Build a summary dataframe of the average of all the means and standard deviation measurements collected in the features data grouped by activities and subjects
+10. Standardize the names of the summary dataframe
+11. Write the dataframe into the file __gcdw4_summary.txt__ in the working directory
+12. return the common dataframe from step #8
+
+#######fwf2df_list()
+########Parameters
+* file.list: list of filepaths to be processed
+* col.width: fixed width of the columns in the files
+* col.number: number of the columns in the files
+* col.names: list of columns names - Default = NULL
+########Steps
+For all the files in the file list:
+1. Extract the data from the current file into a dataframe using ```readr::read_fwf()```
+2. If a list of column names is provided, rename the columns of the dataframe
+3. Standardize the names of the dataframes by removing train or test prefix for the future merge 
+4. Return a list of dataframes
 
 ######Output
 ```run_analysis()``` returns a data frame with the following column names
@@ -47,6 +91,6 @@ my.tidy.dataset<-run_analysis()
 * Creates a gcdw4.summary.txt in the working directory with the average of each measurement for each activity and each subject. Please refer to the CookBook for further details.
 
 ######Error
-```run_analysis()``` returns an error if the file gcdw4_ds.zip is not present in the working directory.
+```run_analysis()``` returns an error if the file __gcdw4_ds.zip__ is not present in the working directory.
 
 
