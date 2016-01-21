@@ -31,8 +31,11 @@ Wearable computing is one of the most popular areas in data science as companies
 ***
 #####run_analysis.R
 ######Usage
-```# Cleans the dataset from the measurement archive and returns a dataset```
-```my.tidy.dataset<-run_analysis()```
+```
+# Cleans the dataset from the measurement archive and returns a dataset
+my.tidy.dataset<-run_analysis()
+```
+
 ######Output
 ```run_analysis()``` returns a data frame with the following column names
 * mode: Indicates wether the data were collected during a training or a testing session. Values in (TEST, TRAIN)
