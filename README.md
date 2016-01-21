@@ -22,6 +22,7 @@ Wearable computing is one of the most popular areas in data science as companies
 [Project Website](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
 ***
+
 #####Files List
 * README.md: This file
 * CookBook.md: Variables and data description
@@ -29,6 +30,7 @@ Wearable computing is one of the most popular areas in data science as companies
 * gcdw4_ds.zip: Copy of the archive file to be cleaned up by the run_analysis.R script. An original copy can be found at [Assignment data link](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 ***
+
 #####run_analysis.R
 ######Usage
 ```
@@ -43,6 +45,7 @@ my.tidy.dataset<-run_analysis()
 * activity: Indicates the activity when the data were collected. Values in (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
 * A series of mean and standard deviations of all the measurements collected. Please refer to the CookBook for further details.
 * Creates a gcdw4.summary.txt in the working directory with the average of each measurement for each activity and each subject. Please refer to the CookBook for further details.
+
 ######Error
 ```run_analysis()``` returns an error if the file gcdw4_ds.zip is not present in the working directory.
 
