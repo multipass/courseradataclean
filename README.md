@@ -2,13 +2,13 @@
 ##[Coursera - JHU] Getting and Cleaning Data (Data Science Specialization)
 ###Course Project Assignment Submission (Yann K)
 ***
-####Contents
+###Contents
 1. Project Summary
 2. Repository Files list
 3. run_analysis.R
 
 ***
-####Project Summary
+###Project Summary
 
 Wearable computing is one of the most popular areas in data science as companies are racing to develop advanced algorithms. The purpose of this project is to clean the data collected from experiments carried out with a group of 30 volunteers performing a series of activities while wearing a smartphone. The activities performed were:
 * Walking 
@@ -22,7 +22,7 @@ Reference: [Project Website](http://archive.ics.uci.edu/ml/datasets/Human+Activi
 
 ***
 
-####Files List
+###Files List
 * README.md: This file
 * CookBook.md: Variables and data description
 * run_analysis.R: Analysis script
@@ -30,31 +30,31 @@ Reference: [Project Website](http://archive.ics.uci.edu/ml/datasets/Human+Activi
 
 ***
 
-####run_analysis.R
+###run_analysis.R
 
-#####Installation
+####Installation
 ```
 source("run_analysis.R")
 ```
 
-#####Dependencies
+####Dependencies
 ```
 library(readr)
 library(plyr)
 ```
 
 
-#####Usage
+####Usage
 ```
 # Cleans the dataset from the measurement archive and returns a dataset
 my.tidy.dataset<-run_analysis()
 ```
 
-######Functions
-######run_analysis()
-#######Parameters
+#####Functions
+#####run_analysis()
+######Parameters
 None
-#######Steps
+######Steps
 1. Unzip the __gcdw4_ds.zip__ archive into the current directory
 2. Get the training and testing data sets recorded from the smartphone's sensors using the function ```fwf2df_list()```
 3. Get the list of features 
@@ -68,20 +68,20 @@ None
 11. Write the dataframe into the file __gcdw4_summary.txt__ in the working directory
 12. return the common dataframe from step #8
 
-######fwf2df_list()
-#######Parameters
+#####fwf2df_list()
+######Parameters
 * file.list: list of filepaths to be processed
 * col.width: fixed width of the columns in the files
 * col.number: number of the columns in the files
 * col.names: list of columns names - Default = NULL
-#######Steps
+######Steps
 For all the files in the file list:
 1. Extract the data from the current file into a dataframe using ```readr::read_fwf()```
 2. If a list of column names is provided, rename the columns of the dataframe
 3. Standardize the names of the dataframes by removing train or test prefix for the future merge 
 4. Return a list of dataframes
 
-#####Output
+####Output
 ```run_analysis()``` returns a data frame with the following column names
 * mode: Indicates wether the data were collected during a training or a testing session. Values in (TEST, TRAIN)
 * subject: Subject unique identifier. Values in (1..30)
@@ -89,7 +89,7 @@ For all the files in the file list:
 * A series of mean and standard deviations of all the measurements collected. Please refer to the CookBook for further details.
 * Creates a gcdw4.summary.txt in the working directory with the average of each measurement for each activity and each subject. Please refer to the CookBook for further details.
 
-#####Error
+####Error
 ```run_analysis()``` returns an error if the file __gcdw4_ds.zip__ is not present in the working directory.
 
 
