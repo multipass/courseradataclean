@@ -1,8 +1,7 @@
 
-###Data Science Specialization
 ###Coursera - John Hopkins University 
-###Getting and Cleaning Data 
-####Course Project Assignment submission (Yann K)
+###Getting and Cleaning Data (Data Science Specialization)
+####Course Project Assignment Submission (Yann K)
 ***
 #####Contents
 1. Project Summary
@@ -32,16 +31,15 @@ Wearable computing is one of the most popular areas in data science as companies
 ***
 #####run_analysis.R
 ######Usage
-```# Cleans the dataset from the measurement archive and returns a dataset
-my.tidy.dataset<-run_analysis()```
+```# Cleans the dataset from the measurement archive and returns a dataset```
+```my.tidy.dataset<-run_analysis()```
 ######Output
 ```run_analysis()``` returns a data frame with the following column names
 * mode: Indicates wether the data were collected during a training or a testing session. Values in (TEST, TRAIN)
 * subject: Subject unique identifier. Values in (1..30)
 * activity: Indicates the activity when the data were collected. Values in (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
-* A series of mean and standard deviations of all the measurements collected. Please refer to the CookBook for the details.
-* Creates a gcdw4.summary.txt in the working directory with the average of each measurement for each activity and each subject
-
+* A series of mean and standard deviations of all the measurements collected. Please refer to the CookBook for further details.
+* Creates a gcdw4.summary.txt in the working directory with the average of each measurement for each activity and each subject. Please refer to the CookBook for further details.
 ######Error
 ```run_analysis()``` returns an error if the file gcdw4_ds.zip is not present in the working directory.
 
