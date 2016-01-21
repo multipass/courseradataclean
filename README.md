@@ -62,11 +62,12 @@ None
 5. Get the names of the activities with their corresponding codes
 6. Get the list of activities performed and the related subjects identifiers
 7. Merge everything in a common dataframe
-8. Standardize the names of the common dataframe
-9. Build a summary dataframe of the average of all the means and standard deviation measurements collected in the features data grouped by activities and subjects
-10. Standardize the names of the summary dataframe
-11. Write the dataframe into the file __gcdw4_summary.txt__ in the working directory
-12. return the common dataframe from step #8
+8. Keep only the mean and the standard deviations measurements
+9. Standardize the names of the common dataframe
+10. Build a summary dataframe of the average of all the means and standard deviation measurements collected in the features data grouped by activities and subjects
+11. Standardize the names of the summary dataframe
+12. Write the dataframe into the file __gcdw4_summary.txt__ in the working directory
+13. return the common dataframe from step #8
 
 #####fwf2df_list()
 ######Parameters
