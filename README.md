@@ -50,7 +50,7 @@ library(plyr)
 my.tidy.dataset<-run_analysis()
 ```
 
-#####Functions
+####Functions
 #####run_analysis()
 ######Parameters
 None
@@ -74,6 +74,7 @@ None
 * col.width: fixed width of the columns in the files
 * col.number: number of the columns in the files
 * col.names: list of columns names - Default = NULL
+
 ######Steps
 For all the files in the file list:
 1. Extract the data from the current file into a dataframe using ```readr::read_fwf()```
