@@ -76,7 +76,8 @@ None
 * col.names: list of columns names - Default = NULL
 
 ######Steps
-For all the files in the file list:
+For all the files in the file list
+
 1. Extract the data from the current file into a dataframe using ```readr::read_fwf()```
 2. If a list of column names is provided, rename the columns of the dataframe
 3. Standardize the names of the dataframes by removing train or test prefix for the future merge 
