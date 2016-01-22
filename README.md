@@ -38,7 +38,8 @@ library(plyr)
 
 ####Usage
 ```
-# Cleans the dataset from the measurement archive and returns a dataset
+# 1.Cleans the dataset from the measurement archive and returns a dataset
+# 2. Create a summary file gcdw4.summary.txt of the data extracted in the current direction
 tidy.df<-run_analysis()
 ```
 
