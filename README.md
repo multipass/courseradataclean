@@ -44,25 +44,29 @@ tidy.df<-run_analysis()
 ```
 
 ####Functions
-#####run_analysis()
+```
+run_analysis()
+```
 ######Parameters
-None
+No parameters
 ######Steps
 1. Unzip the __gcdw4_ds.zip__ archive into the current directory
 2. Get the training and testing data sets recorded from the smartphone's sensors using the function ```fwf2df_list()```
-3. Get the list of features 
+3. Get the list of 561 features 
 4. Get the training and testing features vectors using the function ```fwf2df_list()```
-5. Get the names of the activities with their corresponding codes
+5. Get the names of the 6 activities with their corresponding codes
 6. Get the list of activities performed and the related subjects identifiers
 7. Merge everything in a common dataframe
-8. Keep only the mean and the standard deviations measurements
+8. Keep only the mean and the standard deviations measurements. (refer to the CookBook for the full set of measurements)
 9. Standardize the names of the common dataframe
 10. Build a summary dataframe of the average of all the means and standard deviation measurements collected in the features data grouped by activities and subjects
 11. Standardize the names of the summary dataframe
 12. Write the dataframe into the file __gcdw4_summary.txt__ in the working directory
 13. return the common dataframe from step #8
 
-#####fwf2df_list()
+```
+fwf2df_list()
+```
 ######Parameters
 * file.list: list of filepaths to be processed
 * col.width: fixed width of the columns in the files
