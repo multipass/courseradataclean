@@ -86,7 +86,7 @@ For all the files in the file list:
 * __subject__: Subject unique identifier. Values in (1..30)
 * __activity__: Indicates the activity when the data were collected. Values in (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
 * A series of mean and standard deviations of all the measurements collected. Please refer to the CookBook for further details.
-* Creates a __gcdw4.summary__.txt in the working directory with the average of each measurement for each activity and each subject. Please refer to the CookBook for further details.
+* Creates a __gcdw4.summary.txt__ in the working directory with the average of each measurement for each activity and each subject. Please refer to the CookBook for further details.
 
 ####Error
 ```run_analysis()``` returns an error if the file __gcdw4_ds.zip__ is not present in the working directory.
