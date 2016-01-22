@@ -43,22 +43,22 @@ tGravityAccMag.mean|Gravitational motion linear acceleration magnitude mean|g|[-
 tGravityAccMag.std|Gravitational motion linear acceleration magnitude standard deviation|g|[-1:1]
 tBodyAccJerkMag.mean|Body motion linear jerk magnitude mean|m/s^3|[-1:1]
 tBodyAccJerkMag.std|Body motion linear jerk magnitude standard deviation|m/s^3|[-1:1]
-tBodyGyroMag.mean
-tBodyGyroMag.std
-tBodyGyroJerkMag.mean
-tBodyGyroJerkMag.std
-fBodyAcc.mean.X
-fBodyAcc.mean.Y
-fBodyAcc.mean.Z
-fBodyAcc.std.X
-fBodyAcc.std.Y
-fBodyAcc.std.Z
-fBodyAccJerk.mean.X
-fBodyAccJerk.mean.Y
-fBodyAccJerk.mean.Z
-fBodyAccJerk.std.X
-fBodyAccJerk.std.Y
-fBodyAccJerk.std.Z
+tBodyGyroMag.mean|Body motion gyroscopic acceleration magnitude mean|rad/s^2|[-1:1]
+tBodyGyroMag.std|Body motion gyroscopic acceleration magnitude standard deviation|rad/s^2|[-1:1]
+tBodyGyroJerkMag.mean|Body motion gyroscopic jerk magnitude mean|rad/s^3|[-1:1]
+tBodyGyroJerkMag.std|Body motion gyroscopic jerk magnitude standard deviation|rad/s^3|[-1:1]
+fBodyAcc.mean.X|Fast Fourrier transform of Body motion linear acceleration mean on the X-axis|Hz|[-1:1]
+fBodyAcc.mean.Y|Fast Fourrier transform of Body motion linear acceleration mean on the Y-axis|Hz|[-1:1]
+fBodyAcc.mean.Z|Fast Fourrier transform of Body motion linear acceleration mean on the Z-axis|Hz|[-1:1]
+fBodyAcc.std.X|Fast Fourrier transform of Body motion linear acceleration standard deviation on the X-axis|g|[-1:1]
+fBodyAcc.std.Y|Fast Fourrier transform of Body motion linear acceleration standard deviation on the Y-axis|g|[-1:1]
+fBodyAcc.std.Z|Fast Fourrier transform of Body motion linear acceleration standard deviation on the Z-axis|g|[-1:1]
+fBodyAccJerk.mean.X|Fast Fourrier transform of Body motion linear jerk mean on the X-axis|Hz|[-1:1]
+fBodyAccJerk.mean.Y|Fast Fourrier transform of Body motion linear jerk mean on the Y-axis|Hz|[-1:1]
+fBodyAccJerk.mean.Z|Fast Fourrier transform of Body motion linear jerk mean on the Z-axis|Hz|[-1:1]
+fBodyAccJerk.std.X|Fast Fourrier transform of Body motion linear jerk standard deviation on the X-axis|Hz|[-1:1]
+fBodyAccJerk.std.Y|Fast Fourrier transform of Body motion linear jerk standard deviation on the Y-axis|Hz|[-1:1]
+fBodyAccJerk.std.Z|Fast Fourrier transform of Body motion linear jerk standard deviation on the Z-axis|Hz|[-1:1]
 fBodyGyro.mean.X
 fBodyGyro.mean.Y
 fBodyGyro.mean.Z
