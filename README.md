@@ -1,22 +1,16 @@
 
-##[Coursera - JHU] Getting and Cleaning Data (Data Science Specialization)
+###[Coursera - JHU] Getting and Cleaning Data (Data Science Specialization)
 ###Course Project Assignment Submission (Yann K)
 ***
 ###Contents
 1. Project Summary
 2. Repository Files list
-3. run_analysis.R
+3. Functions and Usage
 
 ***
 ###Project Summary
 
-Wearable computing is one of the most popular areas in data science as companies are racing to develop advanced algorithms. The purpose of this project is to clean the data collected from experiments carried out with a group of 30 volunteers performing a series of activities while wearing a smartphone. The activities performed were:
-* Walking 
-* Walking upstairs 
-* Walking downstairs 
-* Sitting 
-* Standing 
-* Laying
+Wearable computing is one of the most popular areas in data science as companies are racing to develop advanced algorithms. The purpose of this project is to clean the data collected from experiments carried out with a group of 30 volunteers performing a series of activities while wearing a smartphone. The activities performed were: Walking, Walking upstairs, Walking downstairs, Sitting, Standing, Laying.
 
 Reference: [Project Website](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
@@ -25,13 +19,12 @@ Reference: [Project Website](http://archive.ics.uci.edu/ml/datasets/Human+Activi
 ###Files List
 * README.md: This file
 * CookBook.md: Variables and data description
-* run_analysis.R: Analysis script
+* run_analysis.R: Cleaning data script
 * gcdw4_ds.zip: Copy of the archive file to be cleaned up by the run_analysis.R script. An original copy of the archive can be found at [Assignment data link](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 ***
 
-###run_analysis.R
-
+###Functions and Usage
 ####Installation
 ```
 source("run_analysis.R")
@@ -47,7 +40,7 @@ library(plyr)
 ####Usage
 ```
 # Cleans the dataset from the measurement archive and returns a dataset
-my.tidy.dataset<-run_analysis()
+tidy.df<-run_analysis()
 ```
 
 ####Functions
