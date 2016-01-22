@@ -59,26 +59,22 @@ fBodyAccJerk.mean.Z|Fast Fourrier transform of Body motion linear jerk mean on t
 fBodyAccJerk.std.X|Fast Fourrier transform of Body motion linear jerk standard deviation on the X-axis|Hz|[-1:1]
 fBodyAccJerk.std.Y|Fast Fourrier transform of Body motion linear jerk standard deviation on the Y-axis|Hz|[-1:1]
 fBodyAccJerk.std.Z|Fast Fourrier transform of Body motion linear jerk standard deviation on the Z-axis|Hz|[-1:1]
-fBodyGyro.mean.X
-fBodyGyro.mean.Y
-fBodyGyro.mean.Z
-fBodyGyro.std.X
-fBodyGyro.std.Y
-fBodyGyro.std.Z
-fBodyAccMag.mean
-fBodyAccMag.std
-fBodyBodyAccJerkMag.mean
-fBodyBodyAccJerkMag.std
-fBodyBodyGyroMag.mean
-fBodyBodyGyroMag.std
-fBodyBodyGyroJerkMag.mean
-fBodyBodyGyroJerkMag.std
+fBodyGyro.mean.X|Fast Fourrier transform of Body motion gyroscopic acceleration mean on the X-axis|Hz|[-1:1]
+fBodyGyro.mean.Y|Fast Fourrier transform of Body motion gyroscopic acceleration mean on the Y-axis|Hz|[-1:1]
+fBodyGyro.mean.Z|Fast Fourrier transform of Body motion gyroscopic acceleration mean on the Z-axis|Hz|[-1:1]
+fBodyGyro.std.X|Fast Fourrier transform of Body motion gyroscopic acceleration standard deviation on the X-axis|Hz|[-1:1]
+fBodyGyro.std.Y|Fast Fourrier transform of Body motion gyroscopic acceleration standard deviation on the Y-axis|Hz|[-1:1]
+fBodyGyro.std.Z|Fast Fourrier transform of Body motion gyroscopic acceleration standard deviation on the Z-axis|Hz|[-1:1]
+fBodyAccMag.mean|Fast Fourrier transform of Body motion linear acceleration magnitude mean|Hz|[-1:1]
+fBodyAccMag.std|Fast Fourrier transform of Body motion linear acceleration magnitude standard deviation|Hz|[-1:1]
+fBodyBodyAccJerkMag.mean|Fast Fourrier transform of Body motion gyroscopic jerk magnitude mean|Hz|[-1:1]
+fBodyBodyAccJerkMag.std|Fast Fourrier transform of Body motion gyroscopic jerk magnitude mean|Hz|[-1:1]
+fBodyBodyGyroMag.mean|Fast Fourrier transform of Body motion gyroscopic jerk magnitude mean|Hz|[-1:1]
+fBodyBodyGyroMag.std|Fast Fourrier transform of Body motion gyroscopic jerk magnitude standard deviation|Hz|[-1:1]
+fBodyBodyGyroJerkMag.mean|Fast Fourrier transform of Body motion gyroscopic jerk magnitude mean|Hz|[-1:1]
+fBodyBodyGyroJerkMag.std|Fast Fourrier transform of Body motion gyroscopic jerk magnitude mean|Hz|[-1:1]
 
 > 1g is equivalent to 9.80665 m/s^2 
-
-```
-fwf2df_list()
-```
 
 
 
