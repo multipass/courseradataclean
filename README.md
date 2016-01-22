@@ -68,26 +68,25 @@ No parameters
 fwf2df_list()
 ```
 ######Parameters
-* file.list: list of filepaths to be processed
-* col.width: fixed width of the columns in the files
-* col.number: number of the columns in the files
-* col.names: list of columns names - Default = NULL
+* __file.list__: list of filepaths to be processed
+* _column.width_: fixed width of the columns in the files
+* _columns.number_: number of the columns in the files
+* _columns.names_: list of columns names - (Default value is NULL)
 
 ######Steps
-For all the files in the file list
-
+For all the files in the file list:
 1. Extract the data from the current file into a dataframe using ```readr::read_fwf()```
 2. If a list of column names is provided, rename the columns of the dataframe
-3. Standardize the names of the dataframes by removing train or test prefix for the future merge 
+3. Standardize the names of the dataframes by removing _train_ or _test_ prefix for the future merge 
 4. Return a list of dataframes
 
 ####Output
 ```run_analysis()``` returns a data frame with the following column names
-* mode: Indicates wether the data were collected during a training or a testing session. Values in (TEST, TRAIN)
-* subject: Subject unique identifier. Values in (1..30)
-* activity: Indicates the activity when the data were collected. Values in (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+* _mode_: Indicates wether the data were collected during a training or a testing session. Values in (TEST, TRAIN)
+* _subject_: Subject unique identifier. Values in (1..30)
+* _activity_: Indicates the activity when the data were collected. Values in (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
 * A series of mean and standard deviations of all the measurements collected. Please refer to the CookBook for further details.
-* Creates a gcdw4.summary.txt in the working directory with the average of each measurement for each activity and each subject. Please refer to the CookBook for further details.
+* Creates a __gcdw4.summary__.txt in the working directory with the average of each measurement for each activity and each subject. Please refer to the CookBook for further details.
 
 ####Error
 ```run_analysis()``` returns an error if the file __gcdw4_ds.zip__ is not present in the working directory.
