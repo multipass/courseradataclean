@@ -75,6 +75,7 @@ fwf2df_list()
 
 ######Processing Steps
 For all the files in the file list:
+
 1. Extract the data from the current file into a dataframe using ```readr::read_fwf()```
 2. If a list of column names is provided, rename the columns of the dataframe
 3. Standardize the names of the dataframes by removing _train_ or _test_ prefix from the names for the future merge of dataframes
