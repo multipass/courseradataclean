@@ -1,6 +1,5 @@
-
-###[Coursera - JHU] Getting and Cleaning Data (Data Science Specialization)
 ###Course Project Assignment Submission (Yann K)
+####[Coursera - JHU] Getting and Cleaning Data (Data Science Specialization)
 ***
 ###Contents
 1. Project Summary
@@ -18,7 +17,7 @@ Reference: [Project Website](http://archive.ics.uci.edu/ml/datasets/Human+Activi
 
 ###Files List
 * __README.md__: This file
-* __CookBook.md__: Description of the variables returned by ```run_analysis()``` and ```fwf2df_list()```
+* __CodeBook.md__: Description of the variables returned by ```run_analysis()``` and ```fwf2df_list()```
 * __run_analysis.R__: Cleaning data script source file
 * __gcdw4_ds.zip__: Copy of the archive file to be cleaned up by the run_analysis.R script. An original copy of the archive can be found at [Assignment data link](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
@@ -57,11 +56,11 @@ No parameters
 5. Get the names of the 6 activities with their corresponding codes
 6. Get the list of activities performed and the related subjects identifiers
 7. Merge everything in a common dataframe
-8. Keep only the mean and the standard deviations measurements. (refer to the CookBook for the full set of measurements)
+8. Keep only the mean and the standard deviations measurements. (refer to the CodeBook for the full set of measurements)
 9. Standardize the names of the common dataframe
 10. Build a summary dataframe of the average of all the means and standard deviation measurements collected in the features data grouped by activities and subjects
 11. Standardize the names of the summary dataframe
-12. Write the dataframe into the file __gcdw4_summary.txt__ in the working directory
+12. Write the dataframe into the file __gcdw4_summary.txt__ in the working directory. (refer to the CodeBook for the description of the file)
 13. return the common dataframe from step #8
 
 ```
@@ -86,7 +85,7 @@ For all the files in the file list:
 * __subject__: Subject unique identifier. Values in (1..30)
 * __activity__: Indicates the activity when the data were collected. Values in (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
 * A series of mean and standard deviations of all the measurements collected. Please refer to the CookBook for further details.
-* Creates a __gcdw4.summary.txt__ in the working directory with the average of each measurement for each activity and each subject. Please refer to the CookBook for further details.
+* Creates a __gcdw4.summary.txt__ in the working directory with the average of each measurement for each activity and each subject. (Please refer to the CodeBook for further details).
 
 ####Error
 ```run_analysis()``` returns an error if the file __gcdw4_ds.zip__ is not present in the working directory.
