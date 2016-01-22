@@ -18,8 +18,8 @@ Reference: [Project Website](http://archive.ics.uci.edu/ml/datasets/Human+Activi
 
 ###Files List
 * __README.md__: This file
-* __CookBook.md__: Variables and data description
-* __run_analysis.R__: Cleaning data script
+* __CookBook.md__: Description of the variables returned by ```run_analysis()``` and ```fwf2df_list()```
+* __run_analysis.R__: Cleaning data script source file
 * __gcdw4_ds.zip__: Copy of the archive file to be cleaned up by the run_analysis.R script. An original copy of the archive can be found at [Assignment data link](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 ***
@@ -90,5 +90,3 @@ For all the files in the file list:
 
 ####Error
 ```run_analysis()``` returns an error if the file __gcdw4_ds.zip__ is not present in the working directory.
-
-
