@@ -76,8 +76,3 @@ fBodyBodyGyroJerkMag.std|Fast Fourrier transform of Body motion gyroscopic jerk 
 
 > 1g is equivalent to 9.80665 m/s^2 
 
-
-
-```
-#gcdw4.summary.txt
-```
