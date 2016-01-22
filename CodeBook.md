@@ -1,7 +1,5 @@
 ####Code Book
-```
-run_analysis()
-```
+
 Variable Name|Description|Unit|Acceptable Values
 -------------|-----------|----|-----------------
 mode|Experimentation environment|None|(TRAIN, TEST)
