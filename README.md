@@ -17,10 +17,10 @@ Reference: [Project Website](http://archive.ics.uci.edu/ml/datasets/Human+Activi
 ***
 
 ###Files List
-* README.md: This file
-* CookBook.md: Variables and data description
-* run_analysis.R: Cleaning data script
-* gcdw4_ds.zip: Copy of the archive file to be cleaned up by the run_analysis.R script. An original copy of the archive can be found at [Assignment data link](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+* __README.md__: This file
+* __CookBook.md__: Variables and data description
+* __run_analysis.R__: Cleaning data script
+* __gcdw4_ds.zip__: Copy of the archive file to be cleaned up by the run_analysis.R script. An original copy of the archive can be found at [Assignment data link](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 ***
 
@@ -49,7 +49,7 @@ run_analysis()
 ```
 ######Parameters
 No parameters
-######Steps
+######Processing Steps
 1. Unzip the __gcdw4_ds.zip__ archive into the current directory
 2. Get the training and testing data sets recorded from the smartphone's sensors using the function ```fwf2df_list()```
 3. Get the list of 561 features 
@@ -69,22 +69,22 @@ fwf2df_list()
 ```
 ######Parameters
 * __file.list__: list of filepaths to be processed
-* _column.width_: fixed width of the columns in the files
-* _columns.number_: number of the columns in the files
-* _columns.names_: list of columns names - (Default value is NULL)
+* __column.width__: fixed width of the columns in the files
+* __columns.number__: number of the columns in the files
+* __columns.names__: list of columns names - (Default value is NULL)
 
-######Steps
+######Processing Steps
 For all the files in the file list:
 1. Extract the data from the current file into a dataframe using ```readr::read_fwf()```
 2. If a list of column names is provided, rename the columns of the dataframe
-3. Standardize the names of the dataframes by removing _train_ or _test_ prefix for the future merge 
+3. Standardize the names of the dataframes by removing _train_ or _test_ prefix from the names for the future merge of dataframes
 4. Return a list of dataframes
 
 ####Output
 ```run_analysis()``` returns a data frame with the following column names
-* _mode_: Indicates wether the data were collected during a training or a testing session. Values in (TEST, TRAIN)
-* _subject_: Subject unique identifier. Values in (1..30)
-* _activity_: Indicates the activity when the data were collected. Values in (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+* __mode__: Indicates wether the data were collected during a training or a testing session. Values in (TEST, TRAIN)
+* __subject__: Subject unique identifier. Values in (1..30)
+* __activity__: Indicates the activity when the data were collected. Values in (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
 * A series of mean and standard deviations of all the measurements collected. Please refer to the CookBook for further details.
 * Creates a __gcdw4.summary__.txt in the working directory with the average of each measurement for each activity and each subject. Please refer to the CookBook for further details.
 
